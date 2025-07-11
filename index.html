@@ -5,16 +5,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>홍길동의 포트폴리오</title>
   <style>
-    html { scroll-behavior: smooth; }
-    body { font-family: sans-serif; margin: 0; padding: 0; line-height: 1.6; }
-    header, section { padding: 20px; max-width: 900px; margin: auto; }
-    nav a { margin-right: 15px; text-decoration: none; color: #0077cc; }
-    h2 { color: #333; }
-    hr { margin: 30px 0; }
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #f8f8f8;
+      padding: 20px;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      border-bottom: 1px solid #ddd;
+    }
+    nav a {
+      margin-right: 15px;
+      text-decoration: none;
+      color: #0077cc;
+    }
+    section {
+      padding: 80px 20px 20px;
+      max-width: 900px;
+      margin: auto;
+      scroll-margin-top: 100px; /* 메뉴 높이만큼 여백 확보 */
+    }
+    h2 {
+      color: #333;
+    }
+    hr {
+      margin: 30px 0;
+    }
   </style>
 </head>
 <body>
-  <header id="home">
+  <header>
     <h1>홍길동의 포트폴리오</h1>
     <nav>
       <a href="#intro">소개</a>
